@@ -61,12 +61,11 @@ header p{
     opacity:0.6;
 }
 
-#gameover{
+.result{
     display:none;
     width:510px;
     height:510px;
-    text-align:center;
-    background-color:rgba(0,0,0,0.8);
+    text-align:center;   
     border-radius:10px;
     position:absolute;
     left:0;
@@ -74,24 +73,49 @@ header p{
     z-index:100;
 }
 
-#gameover p{
+.result p{
     padding:50px;
     font-family:Arial;
     font-weight:bold;
     font-size:50px;
+}
+
+#win{
+    background-color:rgba(255,255,255,0.8);
+}
+
+#win p{
+    color:#6464fe;
+}
+
+#over{
+    background-color:rgba(0,0,0,0.8);
+}
+
+#over p{
     color:white;
 }
 
-#try_again{    
+.button{    
+    margin:10px;
     padding:10px;
     font-family:Arial;
     font-size:30px;
-    background-color:#6464fe;
-    color:white;
     border-radius:10px;
     text-decoration:none;
 }
 
-#try_again:hover{
-    background-color:#9696fe;
+#continue{
+    background-color:#6464fe;
+    color:white;
+}
+
+#win_again{
+    background-color:#ff7e64;
+    color:white;
+}
+
+#over_again{
+    background-color:#6464fe;
+    color:white;
 }

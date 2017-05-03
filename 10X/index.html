@@ -42,9 +42,14 @@
         <div class="cell" id="cell-4-2"></div>
         <div class="cell" id="cell-4-3"></div>
         <div class="cell" id="cell-4-4"></div>
-        <div id="gameover">
+        <div class="result" id="win">
+            <p>You Win</p>
+            <a href="javascript:continueGame();" class="button" id="continue">Continue</a>
+            <a href="javascript:newgame();" class="button" id="win_again">Try again</a>
+        </div>
+        <div class="result" id="over">
             <p>Game Over</p>
-            <a href="javascript:newgame();" id="try_again">Try again</a>
+            <a href="javascript:newgame();" class="button" id="over_again">Try again</a>
         </div>
     </div>
     

@@ -29,12 +29,12 @@ function prepareForMobile(){
     $('.cell').css('border-radius',0.02*cellSideLength);
     $('.cell').css('font-size',0.65*cellSideLength+'px');
     $('.cell').css('line-height',cellSideLength+'px');
-    $('#gameover').css('width',containerWidth);
-    $('#gameover').css('height',containerWidth);
-    $('#gameover').css('border-radius',0.02*containerWidth);
-    $('#gameover p').css('padding',0.1*containerWidth);     
-    $('#gameover p').css('font-size',0.1*containerWidth+'px'); 
-    $('#try_again').css('font-size',0.06*containerWidth+'px');
+    $('.result').css('width',containerWidth);
+    $('.result').css('height',containerWidth);
+    $('.result').css('border-radius',0.02*containerWidth);
+    $('.result p').css('padding',0.1*containerWidth);     
+    $('.result p').css('font-size',0.1*containerWidth+'px'); 
+    $('.button').css('font-size',0.06*containerWidth+'px');
 }
 
 //初始化
@@ -51,7 +51,7 @@ function newgame(){
             cell.text(board[i][j]);
         }
     }
-    $('#gameover').css('display','none');
+    $('.result').css('display','none');
     //重置分数
     updateScore(0,0);
     score = 0;
@@ -111,7 +111,7 @@ function clearMultipe()
     //遍历所有单元格
     for(var i=0;i<5;i++){
         for(var j=0;j<5;j++){
-            if(board[i][j]%10 == 0){
+            if(board[i][j]%10 == 0 && board[i][j] <= 50 && board[i][j] > 0){
                 count++;
                 sum += board[i][j];
                 changeNum(i,j);
@@ -120,6 +120,9 @@ function clearMultipe()
     }
     updateScore(score,sum*count);
     score += sum*count;
+    if(score > 10000){
+        gamewin();
+    }
 }
 
 //将10的倍数替换
@@ -136,7 +139,17 @@ function changeNum(i,j){
 
 //游戏结束
 function gameover(){
-    $('#gameover').fadeIn(2000);
+    $('#over').fadeIn(2000);
+}
+
+//游戏获胜
+function gamewin(){
+    $('#win').fadeIn(2000);
+}
+
+//继续游戏
+function continueGame(){
+    $('#win').fadeOut();
 }
 
 //生成随机数
