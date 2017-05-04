@@ -1,0 +1,122 @@
+header{
+    display:block;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+}
+
+header h1{
+    font-family:Arial;
+    font-size:40px;
+    font-weight:bold;
+    margin:10px auto;
+}
+
+header #newgame{
+    display:block;
+    width:100px;
+    margin:0 auto;
+    padding:10px;
+    background-color:#6464fe;
+    font-family:Arial;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+header #newgame:hover{
+    background-color:#9696fe;
+}
+
+
+header p{
+    font-family:Arial;
+    font-size:28px;
+    margin:10px auto;
+}
+
+#container{
+    width:490px;
+    height:490px;
+    padding:10px;
+    margin:20px auto;
+    background-color:#aaa;
+    border-radius:10px;
+    position:relative;
+}
+
+.cell{
+    width:90px;
+    height:90px;
+    border-radius:6px;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:60px;
+    line-height:90px;
+    text-align:center;
+    cursor:pointer;
+    position:absolute;
+}
+
+.cell:hover{
+    opacity:0.6;
+}
+
+.result{
+    display:none;
+    width:510px;
+    height:510px;
+    text-align:center;   
+    border-radius:10px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+}
+
+.result p{
+    padding:50px;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:50px;
+}
+
+#win{
+    background-color:rgba(255,255,255,0.8);
+}
+
+#win p{
+    color:#6464fe;
+}
+
+#over{
+    background-color:rgba(0,0,0,0.8);
+}
+
+#over p{
+    color:white;
+}
+
+.button{    
+    margin:10px;
+    padding:10px;
+    font-family:Arial;
+    font-size:30px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+#continue{
+    background-color:#6464fe;
+    color:white;
+}
+
+#win_again{
+    background-color:#ff7e64;
+    color:white;
+}
+
+#over_again{
+    background-color:#6464fe;
+    color:white;
+}
