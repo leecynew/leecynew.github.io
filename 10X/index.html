@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>10X</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-icon.png">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <img id="logo" src="img/10X.gif"/>
+        <div id="main">
+            <input type="button" class="menu" id="classical" value="经典模式" onclick="javascript:window.location.href='game1.html'"/>
+            <input type="button" class="menu" id="challenge" value="挑战模式" onclick="javascript:window.location.href='tobecontinue.html'"/>
+            <input type="button" class="menu" id="rule" value="游戏规则" onclick="javascript:rule()"/>
+            <div id="info">
+                <p id="title">游戏规则</p>
+                <p>经典模式：达到10000分获胜</p>
+                <p>挑战模式：规定时间内得到最高分</p>
+                <p>游戏规则：<br/>点击任意数字X，X变成-1，周围数字加上X，若结果大于50，游戏结束。当结果是10的倍数时，数字随机变成2或3或4或5</p>
+                <p>计分方式：<br/>点击数字X，分数加上X+1。若有n个10的倍数Y1,Y2...Yn，分数加上n*(Y1+Y2+...+Yn)</p>
+                <input type="button" id="close" value="返回" onclick="javascript:rule()"/>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>如有意见和建议请<a href="mailto:leecynew@163.com"/>发送邮件</a></p>
+    </div>
+    
+    <div style="display:none">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261858969'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261858969%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    
+</body>
+</html>

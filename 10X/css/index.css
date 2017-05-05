@@ -1,0 +1,81 @@
+#container{
+    width:500px;
+    margin:0 auto;
+}
+
+#logo{
+    display:block;
+    width:40%;
+    margin:0 auto;
+}
+
+#main{
+    position:relative;
+}
+
+.menu{
+    display:block;
+    width:50%;
+    margin:15% auto;
+    padding:10px;
+    border-radius:10px;
+    font-family:Microsoft Yahei;
+    font-weight:bold;
+    font-size:160%;
+    background-color:#6464fe;
+    color:white;
+}
+
+.menu:hover{
+    opacity:0.6;
+}
+
+#rule{
+    background-color:#ff7e64;
+}
+
+#rule:hover{
+    background-color:#ff7e64;
+}
+
+#info{
+    display:none;
+    padding:0 20px;
+    font-family:'黑体';
+    font-size:120%;
+    text-align:justify;
+    background-color:white;
+    border-radius:20px;
+    border:1px #ff7e64 solid;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+    
+}
+
+#title{
+    font-family:'黑体';
+    font-weight:bold;
+    font-size:150%;
+    text-align:center;
+    color:#ff7e64;
+}
+
+#close{
+    display:block;
+    width:30%;
+    margin:10px auto;
+    border-radius:10px;
+    font-family:'黑体';
+    font-size:120%;
+    background-color:#ff7e64;
+    color:white;
+}
+
+#footer{
+    font-family:Microsoft Yahei;
+    font-weight:bold;
+    font-size:100%;
+    text-align:center;
+}
